@@ -2323,3 +2323,13 @@ border-bottom:1px solid #aaa;
 
 
 .stretch-area {   margin:auto }
+
+
+/*tambahan sendiri*/
+input.watermark { color: #999; }
+	input {
+		padding:4px;
+		text-indent: 5px;
+		width:200px;
+		font-size:14px;
+	}

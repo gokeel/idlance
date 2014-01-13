@@ -108,13 +108,13 @@ if($new_Project_step == "1")
   
   <?php do_action('ProjectTheme_step1_before_price'); ?>
   
-        <li><h2><?php echo __('Price', 'ProjectTheme'); ?>:</h2>
-        <p>
+        <li><h2><?php echo __('Price Range (Low to High)', 'ProjectTheme'); ?>:</h2>
+        <p><input type="text" class="do_input" name="range_low" id="range_low" value="" /> - <input type="text" class="do_input" name="range_high" id="range_high" value="" />
         
       <?php
 	  
-	  $sel = get_post_meta($pid, 'budgets', true);
-	  echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
+	  //$sel = get_post_meta($pid, 'budgets', true);
+	  //echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
 	  
 	  ?>
       
@@ -139,7 +139,42 @@ if($new_Project_step == "1")
         <link rel="stylesheet" media="all" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/ui_thing.css" />
 		<script type="text/javascript" language="javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/timepicker.js"></script>
           
-
+		<script type="text/javascript">
+			$(document).ready(function() {
+			 
+				var range_low = 'Range Low';
+				var range_high = 'Range High';
+			 
+				//init, set watermark text and class
+				$('#range_low').val(range_low).addClass('watermark');
+				$('#range_high').val(range_high).addClass('watermark');
+			 
+				//if blur and no value inside, set watermark text and class again.
+				$('#range_low').blur(function(){
+					if ($(this).val().length == 0){
+						$(this).val(range_low).addClass('watermark');
+					}
+				});
+				$('#range_high').blur(function(){
+					if ($(this).val().length == 0){
+						$(this).val(range_high).addClass('watermark');
+					}
+				});
+			 
+				//if focus and text is watermrk, set it to empty and remove the watermark class
+				$('#range_low').focus(function(){
+					if ($(this).val() == range_low){
+						$(this).val('').removeClass('watermark');
+					}
+				});
+				$('#range_high').focus(function(){
+					if ($(this).val() == range_high){
+						$(this).val('').removeClass('watermark');
+					}
+				});
+			});
+			 
+		</script>
        <?php _e("Project Ending On",'ProjectTheme'); ?>:</h2>
        <?php 
 	   
