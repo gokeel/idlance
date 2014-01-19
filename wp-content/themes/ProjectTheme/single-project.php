@@ -630,7 +630,8 @@
                 	<ul class="project-details">
 							<li>
 								<h3><?php echo __("Project Budget",'ProjectTheme'); ?>:</h3>
-								<p><?php echo ProjectTheme_get_budget_name_string_fromID(get_post_meta(get_the_ID(), 'budgets', true)); ?></p>
+								<!--<p><?php //echo ProjectTheme_get_budget_name_string_fromID(get_post_meta(get_the_ID(), 'budgets', true)); ?></p>-->
+								<p><?php echo get_post_meta(get_the_ID(), 'price', true); ?></p>
 							</li>
                             
                             

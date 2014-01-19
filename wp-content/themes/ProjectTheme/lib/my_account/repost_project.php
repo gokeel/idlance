@@ -181,8 +181,11 @@ $cid = $uid;
 					update_post_meta($new_pid, "closed_date", "0");
 					update_post_meta($new_pid, "ending", $ending);
 					
-					update_post_meta($new_pid, "price", 		ProjectTheme_get_budget_name_string_fromID($_POST['budgets'])); // set project price
-					update_post_meta($new_pid, "budgets", 		$_POST['budgets']);
+					//update_post_meta($new_pid, "price", 		ProjectTheme_get_budget_name_string_fromID($_POST['budgets'])); // set project price
+					update_post_meta($new_pid, "price", 		ProjectTheme_set_budget_string($_POST['low_limit'],$_POST['high_limit']));  //edited by ocky
+					update_post_meta($pid, "low_limit", 		$_POST['low_limit']);  //edited by ocky
+				    update_post_meta($pid, "high_limit", 		$_POST['high_limit']);  //edited by ocky
+				    update_post_meta($new_pid, "budgets", 		$_POST['budgets']);
 					 
 					//------ custo fields --------------
 		
@@ -376,7 +379,6 @@ $cid = $uid;
 			!isset($_POST['project_cat_cat']) ? (is_array($cat) ? $cat[0]->term_id : "") : $_POST['project_cat_cat']
 			, __('Select','ProjectTheme'), "do_input"); ?></p>
         </li>
-        
 	
     	        <?php   
 
@@ -493,16 +495,50 @@ $('#thumbnails').append('<div class="div_div" id="image_ss'+bar[1]+'" > ' + bar[
     
         
         <li>
-        	<h2><?php echo __('Price', 'ProjectTheme'); ?>:</h2>
-        <p>
-        
-          <?php
+        	<h2><?php echo __('Price Range', 'ProjectTheme'); ?>:</h2>
+        <p><input type="text" class="do_input" style="width:150px;" name="low_limit" id="low_limit" value="<?php echo get_post_meta($pid, 'low_limit', true);?>" /> - <input type="text" class="do_input" style="width:150px;" name="high_limit" id="high_limit" value="<?php echo get_post_meta($pid, 'high_limit', true);?>" />
+		<!--<script type="text/javascript">
+			$(document).ready(function() {
+			 
+				var low_limit = 'Low Limit';
+				var high_limit = 'High Limit';
+			 
+				//init, set watermark text and class
+				$('#low_limit').val(low_limit).addClass('watermark');
+				$('#high_limit').val(high_limit).addClass('watermark');
+			 
+				//if blur and no value inside, set watermark text and class again.
+				$('#low_limit').blur(function(){
+					if ($(this).val().length == 0){
+						$(this).val(low_limit).addClass('watermark');
+					}
+				});
+				$('#high_limit').blur(function(){
+					if ($(this).val().length == 0){
+						$(this).val(high_limit).addClass('watermark');
+					}
+				});
+			 
+				//if focus and text is watermrk, set it to empty and remove the watermark class
+				$('#low_limit').focus(function(){
+					if ($(this).val() == low_limit){
+						$(this).val('').removeClass('watermark');
+					}
+				});
+				$('#high_limit').focus(function(){
+					if ($(this).val() == high_limit){
+						$(this).val('').removeClass('watermark');
+					}
+				});
+			});
+			 
+		</script>-->
+         <?php
 	  
-	  $sel = get_post_meta($pid, 'budgets', true);
-	  echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
+	  //$sel = get_post_meta($pid, 'budgets', true);
+	  //echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
 	  
 	  ?>
-        
         </p>
         </li>
         

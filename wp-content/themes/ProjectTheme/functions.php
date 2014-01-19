@@ -546,8 +546,11 @@ function projectTheme_save_custom_fields($pid)
 				update_post_meta($pid, "private_bids", $_POST['private_bids']); 
 				
 		
-		if(isset($_POST['price']))
-		update_post_meta($pid,"price",$_POST['price']);
+		if(isset($_POST['low_limit']) or isset($_POST['high_limit'])) {
+			update_post_meta($pid, "price", 		ProjectTheme_set_budget_string($_POST['low_limit'],$_POST['high_limit']));  //edited by ocky
+			update_post_meta($pid, "low_limit", 		$_POST['low_limit']);  //edited by ocky
+			update_post_meta($pid, "high_limit", 		$_POST['high_limit']);  //edited by ocky
+		}
 		
 		if(isset($_POST['Location']))
 		update_post_meta($pid,"Location",$_POST['Location']);
@@ -1144,7 +1147,8 @@ function ProjectTheme_my_custom_columns($column)
 	
 	elseif ("price" == $column)
 	{	
-		echo ProjectTheme_get_budget_name_string_fromID(get_post_meta($post->ID,'budgets',true));
+		//echo ProjectTheme_get_budget_name_string_fromID(get_post_meta($post->ID,'budgets',true));
+		echo get_post_meta($post->ID,'price',true);
 	}
 	
 	elseif ("exp" == $column)
@@ -1271,12 +1275,11 @@ function projectTheme_theme_project_dts()
         
         <li>
         	<h2><?php echo __('Price','ProjectTheme'); ?>:</h2>
-        <p>
-        
+        <p><input type="text" class="do_input" style="width:150px;" name="low_limit" id="low_limit" value="<?php echo get_post_meta($pid, 'low_limit', true);?>" /> - <input type="text" class="do_input" style="width:150px;" name="high_limit" id="high_limit" value="<?php echo get_post_meta($pid, 'high_limit', true);?>" />
         <?php
 	  
-		  $sel = get_post_meta($pid, 'budgets', true);
-		  echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
+		  //$sel = get_post_meta($pid, 'budgets', true);
+		  //echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
 	  
 	  ?>
         
@@ -4314,8 +4317,8 @@ function projectTheme_get_post_active()
 								<h3><?php echo __("Budget",'ProjectTheme'); ?>:</h3>
 								<p><?php 
 								
-								  $sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
+								  $sel = get_post_meta(get_the_ID(), 'price', true);
+		  						echo $sel;
 								
 								 ?>
                                 
@@ -4538,9 +4541,9 @@ function projectTheme_get_post_main_function( $arr = '')
 								<h3><?php echo __("Budget:",'ProjectTheme'); ?></h3>
 								<p><?php 
 								
-								  $sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
-								
+								  $sel = get_post_meta(get_the_ID(), 'price', true);
+		  						//echo ProjectTheme_get_budget_name_string_fromID($sel);
+								  echo $sel; // edited by ocky
 								 ?>
                                 
                                 </p>
@@ -4672,8 +4675,8 @@ function projectTheme_get_post_awaiting_payment_function()
 								<h3><?php echo __("Budget",'ProjectTheme'); ?>:</h3>
 								<p><?php 
 								
-								  $sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
+								  $sel = get_post_meta(get_the_ID(), 'price', true);
+		  						echo $sel;
 								
 								 ?>
                                 
@@ -4845,8 +4848,8 @@ function projectTheme_get_post_awaiting_compl_function()
 								<h3><?php echo __("Budget",'ProjectTheme'); ?>:</h3>
 								<p><?php 
 								
-								  $sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
+								  $sel = get_post_meta(get_the_ID(), 'price', true);
+		  						echo $sel;
 								
 								 ?>
                                 
@@ -5023,8 +5026,8 @@ function projectTheme_get_post_outstanding_project_function()
 								<h3><?php echo __("Budget",'ProjectTheme'); ?>:</h3>
 								<p><?php 
 								
-								$sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
+								$sel = get_post_meta(get_the_ID(), 'price', true);
+		  						echo $sel;
 								
 								 ?>
                                 
@@ -5168,8 +5171,8 @@ function projectTheme_get_post_pay_function( $arr = '')
 								<h3><?php echo __("Budget",'ProjectTheme'); ?>:</h3>
 								<p><?php 
 								
-								  $sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
+								  $sel = get_post_meta(get_the_ID(), 'price', true);
+		  						echo $sel;
 								
 								 ?>
                                 
@@ -5318,8 +5321,8 @@ function projectTheme_get_post_paid_function( $arr = '')
 								<h3><?php echo __("Budget",'ProjectTheme'); ?>:</h3>
 								<p><?php 
 								
-								  $sel = get_post_meta(get_the_ID(), 'budgets', true);
-		  						echo ProjectTheme_get_budget_name_string_fromID($sel);
+								  $sel = get_post_meta(get_the_ID(), 'price', true);
+		  						echo $sel;
 								
 								 ?>
                                 
@@ -8024,7 +8027,18 @@ function ProjectTheme_project_clear_table($colspan = '')
 			
 			}
 		}
-		
+
+/*************************************************************
+*
+*	ProjectTheme (c) by Ocky - function
+*
+**************************************************************/
+function ProjectTheme_set_budget_string($low_limit, $high_limit)
+{
+	$nm = ProjectTheme_get_show_price($low_limit,0)." - ".ProjectTheme_get_show_price($high_limit,0);	
+	return $nm;				
+	
+}		
 	
 	
 ?>

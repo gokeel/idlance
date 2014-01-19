@@ -108,8 +108,8 @@ if($new_Project_step == "1")
   
   <?php do_action('ProjectTheme_step1_before_price'); ?>
   
-        <li><h2><?php echo __('Price Range (Low to High)', 'ProjectTheme'); ?>:</h2>
-        <p><input type="text" class="do_input" name="range_low" id="range_low" value="" /> - <input type="text" class="do_input" name="range_high" id="range_high" value="" />
+        <li><h2><?php echo __('Price Range', 'ProjectTheme'); ?>:</h2>
+        <p><input type="text" class="do_input" name="low_limit" id="low_limit" value="" /> - <input type="text" class="do_input" name="high_limit" id="high_limit" value="" />
         
       <?php
 	  
@@ -142,33 +142,33 @@ if($new_Project_step == "1")
 		<script type="text/javascript">
 			$(document).ready(function() {
 			 
-				var range_low = 'Range Low';
-				var range_high = 'Range High';
+				var low_limit = 'Low Limit';
+				var high_limit = 'High Limit';
 			 
 				//init, set watermark text and class
-				$('#range_low').val(range_low).addClass('watermark');
-				$('#range_high').val(range_high).addClass('watermark');
+				$('#low_limit').val(low_limit).addClass('watermark');
+				$('#high_limit').val(high_limit).addClass('watermark');
 			 
 				//if blur and no value inside, set watermark text and class again.
-				$('#range_low').blur(function(){
+				$('#low_limit').blur(function(){
 					if ($(this).val().length == 0){
-						$(this).val(range_low).addClass('watermark');
+						$(this).val(low_limit).addClass('watermark');
 					}
 				});
-				$('#range_high').blur(function(){
+				$('#high_limit').blur(function(){
 					if ($(this).val().length == 0){
-						$(this).val(range_high).addClass('watermark');
+						$(this).val(high_limit).addClass('watermark');
 					}
 				});
 			 
 				//if focus and text is watermrk, set it to empty and remove the watermark class
-				$('#range_low').focus(function(){
-					if ($(this).val() == range_low){
+				$('#low_limit').focus(function(){
+					if ($(this).val() == low_limit){
 						$(this).val('').removeClass('watermark');
 					}
 				});
-				$('#range_high').focus(function(){
-					if ($(this).val() == range_high){
+				$('#high_limit').focus(function(){
+					if ($(this).val() == high_limit){
 						$(this).val('').removeClass('watermark');
 					}
 				});

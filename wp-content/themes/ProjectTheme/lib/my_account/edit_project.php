@@ -97,8 +97,11 @@
 			 if(!empty($_POST['budgets'])) 
 			 update_post_meta($pid, "budgets", $_POST['budgets']);
 			  
-			 update_post_meta($pid, "price", 		ProjectTheme_get_budget_name_string_fromID($_POST['budgets'])); // set project price 
-			
+			 //update_post_meta($pid, "price", 		ProjectTheme_get_budget_name_string_fromID($_POST['budgets'])); // set project price 
+			 update_post_meta($pid, "price", 		ProjectTheme_set_budget_string($_POST['low_limit'],$_POST['high_limit']));  //edited by ocky
+			 update_post_meta($pid, "low_limit", 		$_POST['low_limit']);  //edited by ocky
+			 update_post_meta($pid, "high_limit", 		$_POST['high_limit']);  //edited by ocky
+			 
 			  $my_post = array();
 			  $my_post['ID'] = $pid;
 			  $my_post['post_content'] = $project_description;
@@ -666,6 +669,7 @@
         <link rel="stylesheet" media="all" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/ui_thing.css" />
 		<script type="text/javascript" language="javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/timepicker.js"></script>
           
+		  
 		<?php
 	   
 	   $dt = get_post_meta($pid,'ending',true);
@@ -836,11 +840,12 @@ $('#thumbnails').append('<div class="div_div" id="image_ss'+bar[1]+'" > ' + bar[
         
         <li>
         	<h2><?php echo __('Price Range','ProjectTheme'); ?>:</h2>
-        <p>
+        <p><input type="text" class="do_input" style="width:150px;" name="low_limit" id="low_limit" value="<?php echo get_post_meta($pid, 'low_limit', true);?>" /> - <input type="text" class="do_input" style="width:150px;" name="high_limit" id="high_limit" value="<?php echo get_post_meta($pid, 'high_limit', true);?>" />
+		
          <?php
 	  
-	  $sel = get_post_meta($pid, 'budgets', true);
-	  echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
+	  //$sel = get_post_meta($pid, 'budgets', true);
+	  //echo ProjecTheme_get_budgets_dropdown($sel, 'do_input');
 	  
 	  ?>
         </p>

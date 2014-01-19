@@ -72,7 +72,10 @@ if(isset($_POST['project_submit1']))
 		// set project details, as meta post
 			  
 		update_post_meta($pid, "Location", 		$project_location_addr); // set project location
-		update_post_meta($pid, "price", 		ProjectTheme_get_budget_name_string_fromID($_POST['budgets'])); // set project price
+		//update_post_meta($pid, "price", 		ProjectTheme_get_budget_name_string_fromID($_POST['budgets'])); // set project price
+		update_post_meta($pid, "price", 		ProjectTheme_set_budget_string($_POST['low_limit'],$_POST['high_limit']));  //edited by ocky
+		update_post_meta($pid, "low_limit", 		$_POST['low_limit']);  //edited by ocky
+		update_post_meta($pid, "high_limit", 		$_POST['high_limit']);  //edited by ocky
 		update_post_meta($pid, "paid", 			"0");
 		update_post_meta($pid, "views", 		'0');
 		update_post_meta($pid, "budgets", 		$_POST['budgets']);
