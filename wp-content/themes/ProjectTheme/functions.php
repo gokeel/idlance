@@ -4247,7 +4247,7 @@ function projectTheme_get_post_active()
                       
                         
                   <p class="mypostedon">
-                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
+                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?>
                         <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> </p>
                        
                         
@@ -4341,7 +4341,8 @@ function projectTheme_get_post_active()
 					
 							<li>
 								<img src="<?php echo get_bloginfo('template_url'); ?>/images/clock.png" width="15" height="15" /> 
-								<h3><?php echo __("Expires in",'ProjectTheme'); ?>:</h3>
+								<!--<h3><?php echo __("Expires in",'ProjectTheme'); ?>:</h3>-->
+								<h3><?php echo __("Berakhir dalam",'ProjectTheme'); ?>:</h3>
 								<p><?php echo ($closed=="1" ? __('Closed', 'ProjectTheme') : ProjectTheme_prepare_seconds_to_words($ending - current_time('timestamp',0))); ?></p>
 							</li>
 							
@@ -4455,8 +4456,8 @@ function projectTheme_get_post_main_function( $arr = '')
                       
                         
                   <p class="mypostedon">
-                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
-                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> 
+                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?>
+                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a>
                         
                         <?php
 							
@@ -4655,7 +4656,7 @@ function projectTheme_get_post_awaiting_payment_function()
                         
                   <p class="mypostedon">
                         <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
-                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> 
+                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a>
                   </p>
                        
                         
@@ -4806,8 +4807,8 @@ function projectTheme_get_post_awaiting_compl_function()
     
                         
                   <p class="mypostedon">
-                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
-                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> 
+                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?>
+                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a>
                   </p>
                        
                         
@@ -4983,8 +4984,8 @@ function projectTheme_get_post_outstanding_project_function()
     
                         
                   <p class="mypostedon">
-                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
-                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> 
+                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?>
+                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a>
                   </p>
                        
                         
@@ -5144,8 +5145,8 @@ function projectTheme_get_post_pay_function( $arr = '')
     
                         
                   <p class="mypostedon">
-                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
-                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> 
+                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?>
+                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a>
                   </p>
                        
                         
@@ -5291,8 +5292,8 @@ function projectTheme_get_post_paid_function( $arr = '')
     
                         
                   <p class="mypostedon">
-                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?> 
-                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a> 
+                        <?php _e("Posted in",'ProjectTheme');?>: <?php echo get_the_term_list( get_the_ID(), 'project_cat', '', ', ', '' ); ?>
+                        <?php _e("by",'ProjectTheme');?>: <a href="<?php bloginfo('siteurl'); ?>?p_action=user_profile&post_author=<?php echo $post->post_author; ?>"><?php the_author() ?></a>
                   </p>
                        
                         
@@ -5562,8 +5563,9 @@ function projectTheme_slider_post()
                         <?php endif; ?>
                         
                         <?php 
-						$ids = get_post_meta(get_the_ID(),'budgets', true);
-						echo ProjectTheme_get_budget_name_string_fromID($ids); ?>
+						echo get_post_meta(get_the_ID(),'price',true);
+						/*$ids = get_post_meta(get_the_ID(),'budgets', true);
+						echo ProjectTheme_get_budget_name_string_fromID($ids);*/ ?>
                        </p>
 		
 	</div>

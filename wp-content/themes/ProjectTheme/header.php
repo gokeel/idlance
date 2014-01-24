@@ -343,7 +343,7 @@
 				if($adv_search_btn == true):
 			
 			 ?>
-            <li><a href="<?php echo get_permalink(get_option('ProjectTheme_advanced_search_page_id')); ?>"><?php _e('Project Search','ProjectTheme'); ?></a></li> 
+            <li><a href="<?php echo get_permalink(get_option('ProjectTheme_advanced_search_page_id')); ?>"><?php _e('Project Search','ProjectTheme'); ?></a></li>
             <?php endif; ?>
             
             
@@ -376,7 +376,7 @@
 				if($all_cats_btn == true):
 			
 			 ?> 
-            <li><a href="<?php echo get_permalink(get_option('ProjectTheme_all_categories_page_id')); ?>"><?php _e('Show All Categories','ProjectTheme'); ?></a></li> 
+            <li><a href="<?php echo get_permalink(get_option('ProjectTheme_all_categories_page_id')); ?>"><?php _e('Show All Categories','ProjectTheme'); ?></a></li>
             <?php endif; ?>
             
             
@@ -394,7 +394,7 @@
 				if($all_locs_btn == true):
 			
 			 ?>             
-            <li><a href="<?php echo get_permalink(get_option('ProjectTheme_all_locations_page_id')); ?>"><?php _e('Show All Locations','ProjectTheme'); ?></a></li> 
+            <li><a href="<?php echo get_permalink(get_option('ProjectTheme_all_locations_page_id')); ?>"><?php _e('Show All Locations','ProjectTheme'); ?></a></li>
             <?php endif; ?>
             
               <?php

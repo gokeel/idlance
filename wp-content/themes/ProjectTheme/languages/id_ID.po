@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: ProjectTheme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-02 16:10+0200\n"
-"PO-Revision-Date: 2014-01-22 21:24+0700\n"
+"PO-Revision-Date: 2014-01-23 12:05+0700\n"
 "Last-Translator: sitemile <sitemile@sitemile.com>\n"
 "Language-Team: sitemile.com <sitemile@sitemile.com>\n"
 "MIME-Version: 1.0\n"
@@ -19,25 +19,27 @@ msgstr ""
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/404.php:33
 msgid "Page Not Found"
-msgstr ""
+msgstr "Halaman tidak ditemukan"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/404.php:35
 msgid ""
 "The requested page cannot be found. Maybe your project has not been approved "
 "yet."
 msgstr ""
+"Halaman yang dituju tidak ditemukan, proyek anda mungkin belum disetujui/di-"
+"approve oleh Admin."
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive-project.php:90
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/taxonomy.php:91
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/all-posted-projects.php:28
 msgid "All Posted Projects"
-msgstr ""
+msgstr "Semua proyek terpasang"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive-project.php:91
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/taxonomy.php:92
 #, php-format
 msgid "Latest Posted Projects in %s"
-msgstr ""
+msgstr "Proyek Terbaru dalam %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive-project.php:111
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/taxonomy.php:121
@@ -45,40 +47,41 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/user-profile.php:132
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/user-profile.php:344
 msgid "No projects posted."
-msgstr ""
+msgstr "Tidak ada proyek terpasang"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive.php:44
 #, php-format
 msgid "Daily Blog Archives: %s"
-msgstr ""
+msgstr "Arsip Blog Harian: %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive.php:46
 #, php-format
 msgid "Monthly Blog Archives: %s"
-msgstr ""
+msgstr "Arsip Blog Bulanan: %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive.php:48
 #, php-format
 msgid "Yearly Blog Archives: %s"
-msgstr ""
+msgstr "Arsip Blog Tahunan: %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/archive.php:50
 msgid "Blog Archives"
-msgstr ""
+msgstr "Arsip Blog"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/autosuggest.php:82
 msgid "No results found"
-msgstr ""
+msgstr "Hasil tidak ditemukan"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/comments.php:4
 msgid ""
 "This post is password protected. Enter the password to view any comments."
 msgstr ""
+"Postingan terproteksi password. Masukkan password untuk melihat komentar"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/comments.php:27
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/comments.php:42
 msgid "Comment navigation"
-msgstr ""
+msgstr "Navigasi komentar"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/comments.php:28
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/comments.php:43
@@ -92,22 +95,22 @@ msgstr ""
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/comments.php:52
 msgid "Comments are closed."
-msgstr ""
+msgstr "Komentar ditutup"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:439
 #, php-format
 msgid "%s previous value: %s new value: %s"
-msgstr ""
+msgstr "%s nilai sebelumnya: %s nilai baru: %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:454
 #, php-format
 msgid "%s (%s) has changed one or more fields"
-msgstr ""
+msgstr "%s (%s) 1 atau lebih field telah dirubah"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:641
 #, php-format
 msgid "Page %s of %s"
-msgstr ""
+msgstr "Halaman %s dari %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:659
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2216
@@ -128,7 +131,7 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:5144
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:5291
 msgid "Posted in"
-msgstr ""
+msgstr "Kategori"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:969
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:710
@@ -138,12 +141,12 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/personal_information.php:195
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:542
 msgid "Location"
-msgstr ""
+msgstr "Lokasi"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:972
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/user-profile.php:70
 msgid "not defined"
-msgstr ""
+msgstr "tidak ditentukan"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1092
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/user-feedback.php:50
@@ -153,15 +156,15 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/feedbacks.php:95
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/feedbacks.php:155
 msgid "Project Title"
-msgstr ""
+msgstr "Nama Proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1093
 msgid "Author"
-msgstr ""
+msgstr "Pembuat"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1094
 msgid "Posted On"
-msgstr ""
+msgstr "Terpasang pada"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1095
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1273
@@ -176,26 +179,26 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/feedbacks.php:158
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:496
 msgid "Price"
-msgstr ""
+msgstr "Harga"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1096
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4341
 msgid "Expires in"
-msgstr ""
+msgstr "Berakhir dalam"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1097
 msgid "Featured"
-msgstr ""
+msgstr "Utama"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1098
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:1663
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:1793
 msgid "Approved"
-msgstr ""
+msgstr "Disetujui"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1099
 msgid "Thumbnail"
-msgstr ""
+msgstr "Thumbnail"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1100
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1689
@@ -217,7 +220,7 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/private_messages.php:251
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/private_messages.php:369
 msgid "Options"
-msgstr ""
+msgstr "Opsi"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1141
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1292
@@ -231,7 +234,7 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:5871
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:553
 msgid "Yes"
-msgstr ""
+msgstr "Ya"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1142
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1291
@@ -246,7 +249,7 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/mark_delivered.php:78
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:552
 msgid "No"
-msgstr ""
+msgstr "Tidak"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1181
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2600
@@ -254,25 +257,25 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:377
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:544
 msgid "Select"
-msgstr ""
+msgstr "Pilih"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1289
 msgid "Sealed Bids"
-msgstr ""
+msgstr "Penawaran tertutup"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1299
 msgid "Feature this project"
-msgstr ""
+msgstr "Proyek diutamakan"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1305
 msgid "Hide this project"
-msgstr ""
+msgstr "Sembunyikan proyek ini"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1311
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4342
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4567
 msgid "Closed"
-msgstr ""
+msgstr "Ditutup"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1317
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:1199
@@ -280,14 +283,14 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/edit_project.php:866
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:562
 msgid "Address"
-msgstr ""
+msgstr "Alamat"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1337
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/post_new.php:143
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/edit_project.php:678
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:526
 msgid "Project Ending On"
-msgstr ""
+msgstr "Proyek berakhir pada"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1547
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/bidding-panel.php:177
@@ -295,7 +298,7 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/edit_project.php:762
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/repost_project.php:424
 msgid "Select Project Files"
-msgstr ""
+msgstr "Pilih dokumen proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1684
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:818
@@ -308,17 +311,17 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/provider_search.php:101
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/personal_information.php:183
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1685
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:819
 msgid "Bid Amount"
-msgstr ""
+msgstr "Jumlah penawaran"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1686
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:820
 msgid "Date Made"
-msgstr ""
+msgstr "Tanggal pembuatan"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1688
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4701
@@ -327,37 +330,37 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:5348
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:831
 msgid "Winner"
-msgstr ""
+msgstr "Pemenang"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1706
 msgid "Remove Winner"
-msgstr ""
+msgstr "Hapus pemenang"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1714
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4134
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:897
 msgid "No bids placed yet."
-msgstr ""
+msgstr "Belum ada penawaran."
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1896
 msgid "Projects"
-msgstr ""
+msgstr "Proyek-proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1897
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:1903
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:1983
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/payments.php:363
 msgid "Project"
-msgstr ""
+msgstr "Proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1898
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1901
 msgid "Add New Project"
-msgstr ""
+msgstr "Buat Proyek Baru"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1899
 msgid "New Project"
-msgstr ""
+msgstr "Proyek Baru"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1900
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4280
@@ -365,39 +368,39 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/edit_project.php:18
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/edit_project.php:345
 msgid "Edit Project"
-msgstr ""
+msgstr "Ubah Proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1902
 msgid "Search Projects"
-msgstr ""
+msgstr "Cari Proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1923
 msgid "Add New Location"
-msgstr ""
+msgstr "Tambah Lokasi Baru"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1924
 msgid "Search Locations"
-msgstr ""
+msgstr "Cari Lokasi"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1926
 msgid "Project Categories"
-msgstr ""
+msgstr "Kategori Proyek"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1928
 msgid "Locations"
-msgstr ""
+msgstr "Lokasi"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1939
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/choose_user_tp.php:66
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/login_register/register.php:130
 msgid "Service Provider"
-msgstr ""
+msgstr "Penyedia Jasa / Freelancer"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:1944
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/choose_user_tp.php:67
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/login_register/register.php:131
 msgid "Service Contractor"
-msgstr ""
+msgstr "Pembeli Jasa"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2214
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:1715
@@ -405,7 +408,7 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:7926
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/provider_search.php:162
 msgid "Previous"
-msgstr ""
+msgstr "Sebelumnya"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2215
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:1735
@@ -413,12 +416,12 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/admin_menu.php:7946
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/provider_search.php:178
 msgid "Next"
-msgstr ""
+msgstr "Berikutnya"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2278
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/single-project.php:718
 msgid "Posted on"
-msgstr ""
+msgstr "Terpasang pada"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2278
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4248
@@ -429,80 +432,80 @@ msgstr ""
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:5145
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:5292
 msgid "by"
-msgstr ""
+msgstr "oleh"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2284
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4262
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:4485
 msgid "Read More"
-msgstr ""
+msgstr "Lihat"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2390
 msgid "My Account Menu"
-msgstr ""
+msgstr "My Account Menu"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2395
 msgid "MyAccount Home"
-msgstr ""
+msgstr "MyAccount Home"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2401
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/payments.php:154
 msgid "Payments"
-msgstr ""
+msgstr "Pembayaran"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2402
 #, php-format
 msgid "Private Messages %s"
-msgstr ""
+msgstr "Pesan privat %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2403
 msgid "Personal Info"
-msgstr ""
+msgstr "Info personal"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2404
 #, php-format
 msgid "Reviews/Feedback %s"
-msgstr ""
+msgstr "Review/Feedback %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2420
 msgid "Service Contractor Menu"
-msgstr ""
+msgstr "Menu Pembeli Jasa"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2478
 msgid "Post New Project"
-msgstr ""
+msgstr "Pasang Proyek Baru"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2479
 msgid "Active Projects"
-msgstr ""
+msgstr "Proyek Aktif"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2480
 msgid "Closed Projects"
-msgstr ""
+msgstr "Proyek Selesai"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2481
 #, php-format
 msgid "Unpublished Projects %s"
-msgstr ""
+msgstr "Proyek belum di-publish %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2482
 #, php-format
 msgid "Awaiting Completion %s"
-msgstr ""
+msgstr "Menunggu Penyelesaian %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2483
 #, php-format
 msgid "Outstanding Payments %s"
-msgstr ""
+msgstr "Outstanding Payments %s"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2484
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/lib/my_account/completed_projects.php:27
 msgid "Completed Payments"
-msgstr ""
+msgstr "Completed Payments"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2500
 msgid "Service Provider Menu"
-msgstr ""
+msgstr "Menu Freelancer"
 
 #: C:\Users\andrei\Desktop\sitemile_themes\ProjectTheme/functions.php:2553
 msgid "Won Projects"

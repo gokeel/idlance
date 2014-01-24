@@ -425,7 +425,7 @@ function ProjectTheme_do_login_scr()
 				</p>
 							
 				<p><label>&nbsp;</label>
-				<input class="do_input" name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="3" /> 
+				<input class="do_input" style="width:50px;" name="rememberme" type="checkbox" id="rememberme" value="forever" tabindex="3" /> 
 				<?php _e('Keep me logged in',$current_theme_locale_name); ?>
                 </p>
 							
